@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary  bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Welcome!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link px-3" [routerLink]='["/home"]' routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" [routerLink]='["/about"]' routerLinkActive="active">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" [routerLink]='["/education"]' routerLinkActive="active">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" [routerLink]='["/work"]' routerLinkActive="active">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" [routerLink]='["/others"]' routerLinkActive="active">Others</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container center">
+  <router-outlet></router-outlet>
+  <div>
+    Images sourced from : <a href="https://unsplash.com/">Unsplash</a>
+  </div>
+</div>
